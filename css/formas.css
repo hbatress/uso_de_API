@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    height: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr; /* Ajusta las proporciones según tus necesidades */
+    grid-gap: 10px; /* Espacio entre elementos */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+}
+h3{
+    padding: 1em;
+    color: white;
+    letter-spacing: 3px;
+    
+    }
+
+.arriba {
+    color: white;
+    background-color:black; /* Cambia el color de fondo según tu preferencia */
+}
+
+.abajo {
+    background-color: lightgreen; /* Cambia el color de fondo según tu preferencia */
+    grid-column: span 2; /* Ocupa dos columnas */
+}

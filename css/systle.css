@@ -1,0 +1,138 @@
+html, body{
+
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-decoration: none;
+}
+.conteiner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 5px 5px rgb(0,0,0,0.4);
+}
+
+h3{
+    border-radius: 30px;
+padding: 1em;
+color: white;
+letter-spacing: 3px;
+
+}
+ul, .Botones{
+    list-style: none;
+    display: flex;
+    padding: 1em;
+    margin: 0;
+}
+
+.Botones{
+    width: 90px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transform: all .5s ease-in-out;
+    margin: 0.5em;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border-color: blue;
+}
+.Botones:hover{
+    background-color:aqua;
+    box-shadow: 3px 3px 3px;
+}
+input{
+    margin-top: 5px;
+    height: 4vh;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 25px 0px 0px 25px;
+    color: aqua;
+    background-color: black;
+    transition: all 0.2s ease;
+    font-size: 15px;
+    width: 300px;
+    padding-left: 25px;
+}
+input:focus{
+    outline:none;
+}
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label{
+    height: 8vh;
+    top: -8px;
+    font-size: 13px;
+    color: aquamarine;
+}
+.icon-button{
+    margin-top: 5px;
+    top: 1vh;
+    height: 8vh;
+    cursor: pointer;
+    width: 75px;
+    border: 2px solid blue;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.Caja{
+    background-color: rgba(34, 61, 119, 0.603);
+    position: relative;
+    top:140px;
+    width:200%;
+    padding:25px;
+    margin: 0px;
+    display: flex;
+    border-radius: 0.5em;
+    justify-content: center;
+    text-align: center;
+}
+.imagenes{
+    width: 25%;
+}
+img{
+    width: 90%;
+    margin: 15PX;
+    border-radius: 20px;
+
+}
+
+.Inf {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px ridge blue;
+    background-color: black;
+}
+
+.Inf h2,img,div,p {
+    z-index: 1;
+    color: white;
+    position: relative;
+    font-size: 15px;
+}
+  
+  .Inf ::after {
+    content: '';
+    position: absolute;    
+    inset: 5px;
+    border-radius: 15px;
+  }  
